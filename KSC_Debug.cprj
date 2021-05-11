@@ -20,7 +20,7 @@
   <target Ddsp="DSP" Dendian="Little-endian" Dfpu="SP_FPU" Dmve="NO_MVE" Dname="LPC55S69JBD100" Dsecure="TZ-disabled" Dtz="TZ" Dvendor="NXP:11" Pname="cm33_core0">
     <output intdir="./Objects/" name="KSC_Debug" outdir="./Objects/" type="exe"/>
     <ldflags compiler="AC6" add="--entry=Reset_Handler --no_remove --diag_suppress=L6314 --callgraph --info=sizes,summarysizes,totals,unused,veneers --load_addr_map_info --map --strict --summary_stderr --symbols --xref" file="./RTE/Device/LPC55S69JBD100_cm33_core0/LPC55S69_cm33_core0_flash.scf"/>
-    <cflags  compiler="AC6" add="-gdwarf-4 -O1 -std=c99 -xc -ffunction-sections -fno-rtti -Weverything -Wno-reserved-id-macro -Wno-c11-extensions"/>
+    <cflags  compiler="AC6" add="-gdwarf-4 -O0 -std=c99 -xc -ffunction-sections -fno-rtti -Weverything -Wno-reserved-id-macro -Wno-c11-extensions"/>
     <asflags compiler="AC6" add="-gdwarf-4 -masm=auto"/>
   </target>
 
